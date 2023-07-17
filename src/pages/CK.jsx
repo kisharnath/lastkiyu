@@ -1,3 +1,4 @@
+
 import React, { useRef, useState } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
 import htmlToPdfmake from "html-to-pdfmake"
@@ -8,7 +9,10 @@ import TextField from '@mui/material/TextField';
 import axios from 'axios'
 import pdfFonts from "pdfmake/build/vfs_fonts";
 import Nav from './Nav';
+
+
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
+
 var s='span'
 export default function CK() {
   const [data, setData] = useState('')
@@ -16,7 +20,7 @@ export default function CK() {
   
 
   // generate applcation
-  const api_key = "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"
+  const api_key = process.env.REACT_APP_API_KEY
   function generateApplication() {
     const headers = {
       'Authorization': `Bearer ${api_key}`,
