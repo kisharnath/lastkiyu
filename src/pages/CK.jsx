@@ -102,7 +102,7 @@ export default function CK() {
     <Nav/>
       <div className="container text-center mt-5">
         <h3>Welcome to ApplicationWriter</h3>
-        <div className="container d-flex justify-content-center">
+        <div className="container ">
           <Box
             component="form"
             sx={{
