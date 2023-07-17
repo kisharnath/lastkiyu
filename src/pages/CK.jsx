@@ -16,7 +16,7 @@ export default function CK() {
   
 
   // generate applcation
-  const api_key = "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"
+  const api_key = "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"
   function generateApplication() {
     const headers = {
       'Authorization': `Bearer ${api_key}`,
